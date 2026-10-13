@@ -1,0 +1,63 @@
+[
+  {
+    "employee_id": "EMP001",
+    "date": "2026-10-06",
+    "punch_in": "2026-10-06T08:55:00Z",
+    "punch_out": "2026-10-06T17:10:00Z",
+    "total_work_minutes": 495,
+    "status": "PRESENT",
+    "is_manual_correction": false,
+    "audit_trail": [
+      {"action": "PUNCH_IN", "performed_by": "EMP001", "timestamp": "2026-10-06T08:55:00Z"},
+      {"action": "PUNCH_OUT", "performed_by": "EMP001", "timestamp": "2026-10-06T17:10:00Z"}
+    ]
+  },
+  {
+    "employee_id": "EMP002",
+    "date": "2026-10-06",
+    "punch_in": "2026-10-06T10:20:00Z",
+    "punch_out": "2026-10-06T18:30:00Z",
+    "total_work_minutes": 490,
+    "status": "LATE",
+    "is_manual_correction": false,
+    "audit_trail": [
+      {"action": "PUNCH_IN", "performed_by": "EMP002", "timestamp": "2026-10-06T10:20:00Z"},
+      {"action": "PUNCH_OUT", "performed_by": "EMP002", "timestamp": "2026-10-06T18:30:00Z"}
+    ]
+  },
+  {
+    "employee_id": "EMP002",
+    "date": "2026-10-07",
+    "punch_in": "2026-10-07T09:25:00Z",
+    "punch_out": "2026-10-07T17:45:00Z",
+    "total_work_minutes": 500,
+    "status": "PRESENT",
+    "is_manual_correction": true,
+    "audit_trail": [
+      {"action": "PUNCH_IN", "performed_by": "EMP002", "timestamp": "2026-10-07T09:25:00Z"},
+      {
+        "action": "MANUAL_CORRECTION",
+        "performed_by": "HR-ADMIN",
+        "timestamp": "2026-10-08T10:00:00Z",
+        "reason": "Employee forgot to punch out; verified via security logs.",
+        "changes": {
+          "old": {"punch_out": null, "total_work_minutes": null},
+          "new": {"punch_out": "2026-10-07T17:45:00Z", "total_work_minutes": 500}
+        }
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP003",
+    "date": "2026-10-06",
+    "punch_in": "2026-10-06T09:00:00Z",
+    "punch_out": "2026-10-06T12:30:00Z",
+    "total_work_minutes": 210,
+    "status": "HALF_DAY",
+    "is_manual_correction": false,
+    "audit_trail": [
+      {"action": "PUNCH_IN", "performed_by": "EMP003", "timestamp": "2026-10-06T09:00:00Z"},
+      {"action": "PUNCH_OUT", "performed_by": "EMP003", "timestamp": "2026-10-06T12:30:00Z"}
+    ]
+  }
+]

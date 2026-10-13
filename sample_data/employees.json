@@ -1,0 +1,38 @@
+[
+  {
+    "employee_id": "EMP001",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@company.com",
+    "department": "Engineering",
+    "shift_start": "09:00",
+    "is_active": true,
+    "created_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "employee_id": "EMP002",
+    "name": "Bob Smith",
+    "email": "bob.smith@company.com",
+    "department": "Product",
+    "shift_start": "09:30",
+    "is_active": true,
+    "created_at": "2025-03-01T00:00:00Z"
+  },
+  {
+    "employee_id": "EMP003",
+    "name": "Carol Davis",
+    "email": "carol.davis@company.com",
+    "department": "HR",
+    "shift_start": "09:00",
+    "is_active": true,
+    "created_at": "2025-06-10T00:00:00Z"
+  },
+  {
+    "employee_id": "EMP004",
+    "name": "David Wilson",
+    "email": "david.wilson@company.com",
+    "department": "Engineering",
+    "shift_start": "10:00",
+    "is_active": false,
+    "created_at": "2024-11-20T00:00:00Z"
+  }
+]
